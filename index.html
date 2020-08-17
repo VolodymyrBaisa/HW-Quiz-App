@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz Game</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Custom Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Scripts -->
+        <script src="js/game.js" defer></script>
+    </head>
+    <body>
+        <!-- Background Waves -->
+        <div class="background-wave-1"></div>
+        <div class="background-wave-2"></div>
+        <div class="background-wave-3"></div>
+
+        <!-- Start scene -->
+        <div id="start">
+            <div class="container center-h">
+                <!-- Game Name -->
+                <div class="game-start-header center-h center-v">
+                    Quiz&#160;<strong>Game</strong>
+                </div>
+                <!--Game Card-->
+                <div class="game-card">
+                    <div class="card-body">
+                        <div class="start-content">
+                            <div class="row center-h center-v">
+                                <div class="start-game-button">
+                                    <div>Start Game</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Background Waves -->
+                        <div class="card-bg-wave-1"></div>
+                        <div class="card-bg-wave-2"></div>
+                        <div class="card-bg-wave-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Start Scene -->
+        <div id="game" class="hideElements">
+            <div class="container center-h">
+                <!-- Game Complexity -->
+                <div class="game-complexity center-h center-v">
+                    <div class="gc-left-button">&lt;</div>
+                    <div class="gc-text">Medium <strong>Game</strong></div>
+                    <div class="gc-right-button">&gt;</div>
+                </div>
+                <!-- Time Remaining -->
+                <div class="time-remaining center-h center-v">
+                    <div class="tr-text">Time Remaining</div>
+                    <div class="tr-clock">00:00</div>
+                </div>
+                <!--Game Card-->
+                <div class="game-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="question-counter">Question 0 of 0</div>
+                            <div class="next-button">Next &gt;</div>
+                        </div>
+                        <!-- Question Field -->
+                        <div class="question-content">
+                            <div class="game-question row">&#160;</div>
+                            <!-- Answer Header -->
+                            <div class="answer-text row center-h">Answer</div>
+                            <div class="row center-h">
+                                <div class="answer-a-button">
+                                    <div class="a-option-label">A</div>
+                                    <div class="a-option-text">&#160;</div>
+                                </div>
+                                <div class="answer-b-button">
+                                    <div class="b-option-label">B</div>
+                                    <div class="b-option-text">&#160;</div>
+                                </div>
+                            </div>
+                            <div class="row center-h">
+                                <div class="answer-c-button">
+                                    <div class="c-option-label">C</div>
+                                    <div class="c-option-text">&#160;</div>
+                                </div>
+                                <div class="answer-d-button">
+                                    <div class="d-option-label">D</div>
+                                    <div class="d-option-text">&#160;</div>
+                                </div>
+                            </div>
+                            <div class="row center-h">
+                                <div class="result-enter">Enter</div>
+                            </div>
+                            <div class="row center-h">
+                                <div class="game-score-result">
+                                    <div class="score-result-label">Score:</div>
+                                    <div class="score-result-text">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Background Waves -->
+                        <div class="card-bg-wave-1"></div>
+                        <div class="card-bg-wave-2"></div>
+                        <div class="card-bg-wave-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Over -->
+        <div id="gameOver" class="hideElements">
+            <div class="container center-h">
+                <!--Game Card-->
+                <div class="game-card">
+                    <div class="card-body">
+                        <div class="game-over-content">
+                            <!-- Game Score -->
+                            <div class="go-score">
+                                <div class="go-score-text">
+                                    Your Score:
+                                </div>
+                                <div class="go-score-result">0</div>
+                            </div>
+                            <!-- Save Game Score -->
+                            <div class="save-game-score">
+                                <input type="text" placeholder="Name" />
+                                <div class="save-game-button">Enter</div>
+                            </div>
+                            <!-- Top 5 scoreboard -->
+                            <div class="scoreboard center-h">
+                                <div class="sb-table">
+                                    <div class="sb-title">
+                                        <p>Top 5 Scoreboard</p>
+                                    </div>
+                                    <div class="sb-heading">
+                                        <div class="sb-cell">
+                                            <p>Rank</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>Name</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>Score</p>
+                                        </div>
+                                    </div>
+                                    <div class="sb-row">
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                    <div class="sb-row">
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                    <div class="sb-row">
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                    <div class="sb-row">
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                    <div class="sb-row">
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div class="sb-cell">
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Try Again -->
+                            <div class="try-again-container center-h">
+                                <div class="try-again">Try Again</div>
+                            </div>
+                        </div>
+                        <!-- Background Waves -->
+                        <div class="card-bg-wave-1"></div>
+                        <div class="card-bg-wave-2"></div>
+                        <div class="card-bg-wave-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

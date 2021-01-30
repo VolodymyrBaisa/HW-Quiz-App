@@ -1,14 +1,12 @@
-# HW-Quiz-App
+# QuizApplication
 
-## User Story
+A timed quiz application on JavaScript fundamentals that stores high scores
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Introduction
 
-## Acceptance Criteria
+This application uses javascript to manipulate the DOM while a user takes a quiz.
+
+## App functioning
 
 ```
 GIVEN I am taking a code quiz
@@ -23,3 +21,18 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 ```
+
+### Built With
+
+-   HTML
+
+-   CSS
+
+-   JavaScript
+
+![Application Screenshot](assets/img/1.png)
+![Application Screenshot](assets/img/2.png)
+
+## Web Site Link
+
+https://volodymyrbaisa.github.io/HW-Quiz-App/
